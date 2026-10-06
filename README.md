@@ -2,6 +2,8 @@
 
 Repositório da atividade acadêmica de Desenvolvimento Web III.
 
-## Versão inicial: setup
+## Versão 1.00: Flask Básico
 
-Esta versão prepara o repositório e protege arquivos locais do ambiente Python. A aplicação Flask e o arquivo principal `main.py` serão adicionados progressivamente nos próximos commits.
+O repositório foi preparado no commit de setup. Nesta versão, `main.py` cria a aplicação Flask `app_Amizael` e define somente a rota `/`, que retorna `Olá, Turma!`.
+
+Com a virtualenv ativada e Flask instalado, execute `python main.py` para iniciar o servidor local.
