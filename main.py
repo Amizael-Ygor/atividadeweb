@@ -5,7 +5,7 @@ app_Amizael = Flask(__name__)
 
 @app_Amizael.route("/")
 def inicio():
-    return "Olá, Turma!"
+    return render_template("homepage.html")
 
 
 @app_Amizael.route("/saudacao/<nome>")

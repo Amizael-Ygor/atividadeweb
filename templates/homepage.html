@@ -1,11 +1,8 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-    <meta charset="utf-8">
-    <title>Homepage</title>
-</head>
-<body>
-    <h1>Bem-vindo à homepage</h1>
-    <p>Esta página é renderizada pelo Flask.</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block titulo %}Homepage | Projeto Flask{% endblock %}
+
+{% block conteudo %}
+<h2>Olá, Turma!</h2>
+<p>Bem-vindo à homepage do projeto Flask.</p>
+{% endblock %}

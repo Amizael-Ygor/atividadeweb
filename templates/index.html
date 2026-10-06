@@ -1,11 +1,8 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-    <meta charset="utf-8">
-    <title>Index</title>
-</head>
-<body>
-    <h1>Página index</h1>
-    <p>Esta página HTML é renderizada com render_template.</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block titulo %}Index | Projeto Flask{% endblock %}
+
+{% block conteudo %}
+<h2>Página index</h2>
+<p>Esta página HTML é renderizada com render_template.</p>
+{% endblock %}
