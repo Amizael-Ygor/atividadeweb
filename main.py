@@ -8,5 +8,10 @@ def inicio():
     return "Olá, Turma!"
 
 
+@app_Amizael.route("/saudacao/<nome>")
+def saudacao(nome):
+    return f"Olá, {nome}!"
+
+
 if __name__ == "__main__":
     app_Amizael.run(debug=True)
