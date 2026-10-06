@@ -1,13 +1,10 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-    <meta charset="utf-8">
-    <title>Usuário</title>
-</head>
-<body>
-    <h1>Dados do usuário</h1>
-    <p><strong>Nome:</strong> {{ nome }}</p>
-    <p><strong>Profissão:</strong> {{ profissao }}</p>
-    <p><strong>Disciplina:</strong> {{ disciplina }}</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block titulo %}Usuário | Projeto Flask{% endblock %}
+
+{% block conteudo %}
+<h2>Dados do usuário</h2>
+<p><strong>Nome:</strong> {{ nome }}</p>
+<p><strong>Profissão:</strong> {{ profissao }}</p>
+<p><strong>Disciplina:</strong> {{ disciplina }}</p>
+{% endblock %}
