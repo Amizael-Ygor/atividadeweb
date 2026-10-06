@@ -28,5 +28,15 @@ def index():
     return render_template("index.html")
 
 
+@app_Amizael.route("/usuario")
+def usuario():
+    return render_template(
+        "usuario.html",
+        nome="Amizael",
+        profissao="Estudante TSI",
+        disciplina="Desenvolvimento Web III",
+    )
+
+
 if __name__ == "__main__":
     app_Amizael.run(debug=True)
