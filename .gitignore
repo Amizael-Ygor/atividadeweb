@@ -7,3 +7,6 @@ atividadeweb/
 __pycache__/
 **/__pycache__/
 *.py[cod]
+
+# ZIP extraido para consulta; os recursos ativos ficam nas pastas do projeto
+/Projeto Flask - código fonte-20261005/

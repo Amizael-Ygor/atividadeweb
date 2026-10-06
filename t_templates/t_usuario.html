@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+ 
+{% block conteudo %}
+
+<img class="profile-image" src="{{ url_for('static', filename='img/images.jpg') }}" alt="Ilustração de uma professora">
+<h2>Olá, {{nome}} </h2>
+<p>
+    <b>Profissão: </b> {{ profissao }} <br/>
+    <b>Disciplina: </b> {{ disciplina }}
+</p>
+
+{% endblock %}  

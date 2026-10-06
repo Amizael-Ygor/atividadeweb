@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+<!-- Diretiva do Flask para indicar que esta página tem um template chamado t_base.html -->
+
+{% block conteudo %}
+    <h2>Olá, {{ nome }}!</h2>
+    <p id="dataHora" aria-live="polite"></p>
+    <button type="button" onclick="mostrarDataHora()">Atualizar data e hora</button>
+    <div id="cotacao" aria-live="polite">Carregando cotação do dólar...</div>
+    <script src="{{ url_for('static', filename='js/script2.js') }}" defer></script>
+{% endblock %}

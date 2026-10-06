@@ -1,11 +1,11 @@
 from flask import Flask, render_template
 
-app_Amizael = Flask(__name__)
+app_Amizael = Flask(__name__, template_folder="t_templates")
 
 
 @app_Amizael.route("/")
 def inicio():
-    return render_template("homepage.html")
+    return render_template("t_index.html", nome="Turma")
 
 
 @app_Amizael.route("/saudacao/<nome>")
@@ -15,23 +15,23 @@ def saudacao(nome):
 
 @app_Amizael.route("/homepage")
 def homepage():
-    return render_template("homepage.html")
+    return render_template("t_index.html", nome="Turma")
 
 
 @app_Amizael.route("/contato")
 def contato():
-    return render_template("contato.html")
+    return render_template("t_contato.html")
 
 
 @app_Amizael.route("/index")
 def index():
-    return render_template("index.html")
+    return render_template("t_index.html", nome="Turma")
 
 
 @app_Amizael.route("/usuario")
 def usuario():
     return render_template(
-        "usuario.html",
+        "t_usuario.html",
         nome="Amizael",
         profissao="Estudante TSI",
         disciplina="Desenvolvimento Web III",

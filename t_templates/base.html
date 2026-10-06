@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <header class="site-header">
+        <img class="site-logo" src="{{ url_for('static', filename='img/logo-IFRO-horizontal_1_F3hUyPz.png') }}" alt="Instituto Federal de Rondônia">
+    </header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perfil do usuário</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <a href="{{ url_for('index') }}">Página Inicial</a>
+            <a href="{{ url_for('contato') }}">Contatos</a>
+            <a href="{{ url_for('usuario') }}">Perfil do Usuário</a>
+        </ul>
+    </nav>
+
+    {% block conteudo %}
+
+    {% endblock %}
+
+    <h6>Desenvolvido por: Turma 2025</h6>
+</body>
+</html>
